@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GeneralItemView" customModule="TKTLibrary" customModuleProvider="target">
+            <connections>
+                <outlet property="infoLabel" destination="VER-C9-Ph8" id="jgG-tQ-7HZ"/>
+                <outlet property="titleLabel" destination="7pd-lt-Hhn" id="aGI-C9-vB5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="b2e-eN-WS9">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEY-NK-bAv">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="91"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pd-lt-Hhn">
+                            <rect key="frame" x="20" y="20" width="374" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VER-C9-Ph8">
+                            <rect key="frame" x="20" y="43" width="374" height="27"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iP4-gy-WVN">
+                            <rect key="frame" x="20" y="90" width="374" height="1"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="6ts-JE-gg8"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="7pd-lt-Hhn" firstAttribute="leading" secondItem="LEY-NK-bAv" secondAttribute="leading" constant="20" id="1wK-i1-Id3"/>
+                        <constraint firstItem="iP4-gy-WVN" firstAttribute="top" secondItem="VER-C9-Ph8" secondAttribute="bottom" constant="20" id="B5w-gD-YZD"/>
+                        <constraint firstItem="7pd-lt-Hhn" firstAttribute="top" secondItem="LEY-NK-bAv" secondAttribute="top" constant="20" id="JXe-m6-91j"/>
+                        <constraint firstAttribute="bottom" secondItem="iP4-gy-WVN" secondAttribute="bottom" id="MaF-O7-CpV"/>
+                        <constraint firstItem="VER-C9-Ph8" firstAttribute="top" secondItem="7pd-lt-Hhn" secondAttribute="bottom" constant="5" id="U9u-NX-AKW"/>
+                        <constraint firstAttribute="trailing" secondItem="7pd-lt-Hhn" secondAttribute="trailing" constant="20" id="cOt-iW-6tf"/>
+                        <constraint firstItem="iP4-gy-WVN" firstAttribute="leading" secondItem="LEY-NK-bAv" secondAttribute="leading" constant="20" id="ep7-C0-Zz5"/>
+                        <constraint firstItem="VER-C9-Ph8" firstAttribute="leading" secondItem="LEY-NK-bAv" secondAttribute="leading" constant="20" id="gdi-Gh-0QD"/>
+                        <constraint firstAttribute="trailing" secondItem="iP4-gy-WVN" secondAttribute="trailing" constant="20" id="rgb-TF-6IM"/>
+                        <constraint firstAttribute="trailing" secondItem="VER-C9-Ph8" secondAttribute="trailing" constant="20" id="tyh-NR-teh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="igO-ao-Sxv" firstAttribute="trailing" secondItem="LEY-NK-bAv" secondAttribute="trailing" id="9US-E6-XId"/>
+                <constraint firstItem="LEY-NK-bAv" firstAttribute="leading" secondItem="igO-ao-Sxv" secondAttribute="leading" id="Win-qs-kZv"/>
+                <constraint firstItem="LEY-NK-bAv" firstAttribute="top" secondItem="b2e-eN-WS9" secondAttribute="top" id="lva-MZ-R7t"/>
+                <constraint firstAttribute="bottom" secondItem="LEY-NK-bAv" secondAttribute="bottom" id="nql-am-0ph"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="igO-ao-Sxv"/>
+            <point key="canvasLocation" x="137.68115942028987" y="96.09375"/>
+        </view>
+    </objects>
+</document>

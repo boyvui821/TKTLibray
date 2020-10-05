@@ -1,0 +1,6 @@
+framework module Pods_TKTLibrary {
+  umbrella header "Pods-TKTLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
